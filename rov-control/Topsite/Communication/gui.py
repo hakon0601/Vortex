@@ -85,6 +85,7 @@ class Gui(tk.Tk):
             #print axis
             self.horizontal_slider_1.set(round(axis[0] * 1000, 0))
             self.vertical_slider_1.set(round(axis[1] * 1000, 0))
+            self.client.send(str(axis))
 
 if __name__ == "__main__":
     app = Gui(host="178.62.193.33", port=12000, use_controller=True)
