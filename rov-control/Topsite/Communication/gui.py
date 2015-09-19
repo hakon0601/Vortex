@@ -5,7 +5,11 @@ import Tkinter as tk
 import tcpclient
 import action
 import ps3controller
-from threading import Timer
+import threading
+import xinterface
+import ctrl_model
+import time
+
 
 class Gui(tk.Tk):
     def __init__(self, host, port, use_controller=False, *args, **kwargs):
@@ -19,12 +23,23 @@ class Gui(tk.Tk):
         self.set_key_bindings()
         self.command_action_dict = self.create_command_action_dict()
 
+        control_model = ctrl_model.Model()
+        # Init input thread
+        input_thread = threading.Thread(target=xinterface.get_input, args=(control_model,))
+        input_thread.start()
 
+        while True:
+            print str(control_model.control_model)
+            time.sleep(0.5)
+
+
+        '''
         if use_controller:
             self.controller = ps3controller.PS3Controller()
             # Allows the gui to set up before starting the controller transmissions
-            t = Timer(5, self.start_listening_to_controller)
+            t = threading.Timer(5, self.start_listening_to_controller)
             t.start()
+        '''
 
 
     def create_buttons(self):

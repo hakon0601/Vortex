@@ -2,13 +2,14 @@ from os import popen
 import sys
 import re
 
+
 def get_input(status):
 
-    #Open up and get rid of cruft
     playstation = False
-    subprocess = popen('xboxdrv --detach-kernel-driver')
+    subprocess = popen('sudo xboxdrv --detach-kernel-driver')
     for i in range(0, 18):
         line = subprocess.readline()
+        print line
         if 'PLAYSTATION' in line:
             playstation = True
 
@@ -39,8 +40,6 @@ def get_input(status):
             status['B'] = int(data[29])
             status['X'] = int(data[31])
             status['Y'] = int(data[33])
-
-            print data
 
             status['hardTrigger']['left'] = int(data[35])
             status['hardTrigger']['rigth'] = int(data[37])
