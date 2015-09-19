@@ -25,7 +25,7 @@ class Gui(tk.Tk):
 
         control_model = ctrl_model.Model()
         # Init input thread
-        input_thread = threading.Thread(target=xinterface.get_input, args=(control_model,))
+        input_thread = threading.Thread(target=xinterface.get_input, args=(control_model.control_model,))
         input_thread.start()
 
         while True:

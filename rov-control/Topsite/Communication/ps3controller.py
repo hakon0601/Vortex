@@ -1,4 +1,4 @@
-import pygame
+#import pygame
 
 class PS3Controller():
 	def __init__(self):

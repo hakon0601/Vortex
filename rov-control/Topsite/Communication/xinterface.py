@@ -53,6 +53,9 @@ def get_input(status):
             line = subprocess.readline()
             data = filter(bool, re.split('[ :]', line))
 
+            status['back'] = int(data[17])
+            status['start'] = int(data[21])
+
             status['leftThumbStick']['X'] = int(data[1])
             status['leftThumbStick']['Y'] = int(data[3])
 
@@ -65,8 +68,6 @@ def get_input(status):
             status['Dpad']['east'] = int(data[13])
             status['Dpad']['west'] = int(data[15])
 
-            status['back'] = int(data[17])
-            status['start'] = int(data[21])
 
             status['leftThumbPush'] = int(data[23])
             status['rightThumbPush'] = int(data[25])
