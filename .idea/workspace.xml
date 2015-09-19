@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8fefd38-664c-4987-a3ff-6049b4436da1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rov-control/Topsite/Communication/controller/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rov-control/Topsite/Communication/controller/control.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rov-control/Topsite/Communication/controller/psinterface.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rov-control/Topsite/Communication/controller/xinterface.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rov-control/Topsite/Communication/gui.py" afterPath="$PROJECT_DIR$/rov-control/Topsite/Communication/gui.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Vortex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,14 +94,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xinterface.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="xinterface.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rov-control/Topsite/Communication/xinterface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34249085">
+            <state vertical-scroll-proportion="0.0">
               <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -146,6 +152,7 @@
         <option value="$PROJECT_DIR$/rov-control/Topsite/Communication/ctrl_model.py" />
         <option value="$PROJECT_DIR$/rov-control/Topsite/Communication/gui.py" />
         <option value="$PROJECT_DIR$/rov-control/Topsite/Communication/xinterface.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -661,11 +668,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rov-control/Topsite/Communication/xinterface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34249085">
+        <state vertical-scroll-proportion="0.0">
           <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
